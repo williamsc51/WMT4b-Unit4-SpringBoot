@@ -20,7 +20,7 @@ public class NoteController {
         return noteService.getAllNoteByUserId(userId);
     }
 
-    @PostMapping("/user/{userID}")
+    @PostMapping("/user/{userId}")
     public void addNote(@RequestBody NoteDto noteDto, @PathVariable Long userId){
         noteService.addNote(noteDto, userId);
     }
